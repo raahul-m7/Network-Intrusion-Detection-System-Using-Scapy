@@ -12,30 +12,20 @@ A Python-based Network Intrusion Detection System (NIDS) that monitors real-time
    ```bash
    git clone https://github.com/<Your-Username>/Network-Intrusion-Detection-System-Using-Scapy.git
 
-Install the required dependencies:
-bash
+2. Install the required dependencies:
+   '''bash
+   pip install -r requirements.txt
 
-pip install -r requirements.txt
+##Usage
 
-Usage
-Run the intrusion detection system:
-bash
+1. Run the intrusion detection system:
+   '''bash
+   python src/nids.py
 
-python src/nids.py
+2.Add custom detection rules using:
+   '''bash
+   action protocol src_ip src_port flow dst_ip dst_port message
 
-Add custom detection rules using:
-bash
-
-action protocol src_ip src_port flow dst_ip dst_port message
-
-License
+##License
 This project is licensed under the MIT License - see the LICENSE file for details.
 markdown
-
-
-### Step 4: Add `requirements.txt`
-1. **Click "Add file"** > **"Create new file"**.
-2. Name it `requirements.txt` and add:
-   ```txt
-   scapy
-   keyboard
